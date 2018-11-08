@@ -1,0 +1,28 @@
+//Main Navigation Styles
+
+nav{
+
+    margin-top: 2px;
+
+    ul{
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    a{
+        text-decoration: none;
+        color: $text-color-white;
+        padding: 5px 25px;
+        font-size: $nav-font-size;
+    }
+ 
+}
+
+#logo{
+    font-weight: bold;
+    font-size: $logo-font-size;
+    margin-right: 380px;
+}

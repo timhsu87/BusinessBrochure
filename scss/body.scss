@@ -1,0 +1,14 @@
+//Body Styles
+
+body{
+    background-color: $body-bg-color;
+    font-family: $body-font;
+    color: $text-color-white;
+}
+
+//Container Style
+
+.container{
+    width: 950px;
+    margin: 0 auto;
+}

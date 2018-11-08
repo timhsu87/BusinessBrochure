@@ -1,0 +1,26 @@
+//Footer Styles
+
+footer{
+    background-color: $footer-bg-color;
+    height: 250px;
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 30px;
+}
+
+.footer-title-text{
+    font-size: $footer-title-text;
+    font-weight: bold;
+    
+}
+
+.footer-subheader-text{
+    font-size: $footer-subheader-text;
+}
+
+
+
+.footer-body-text{
+    font-size: $footer-body-text;
+    margin: 5px 0px;
+}
