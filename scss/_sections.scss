@@ -1,36 +1,21 @@
 
-//Video Trailer Section
+//Container style   
 
-.video-trailer{
-    position: relative;
+.container{
+    width: 950px;
+    margin: 0 auto;
 }
 
-.video-trailer video{
-    min-width: 100%;
-    min-height: 100vh;  
-}
+//Link Tags Styles
 
-.trailer-text{
-    position: absolute;
-    top: 45%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    border: 1px solid $text-color-white;
-    width: 275px;
-    height: 50px;
-    line-height: 50px;
-    text-align: center;
-    
-}
-
-.trailer-text a{
+a{
     text-decoration: none;
     color: $text-color-white;
-   
-
-   
-
 }
+
+
+
+
 
 
 
