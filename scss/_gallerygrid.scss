@@ -5,7 +5,7 @@
     font-size: $title-font-size;
 
     @media (max-width: 600px){
-        font-size: 100px;
+        font-size: 40px;
     }
     
 }
@@ -15,8 +15,9 @@
     grid-template-columns: 1fr 1fr 1fr;
     grid-row-gap: 20px;
     padding-bottom: 100px;
+    justify-content: center;
 
-    @media (max-width: 600px){
+    @media (max-width: 850px){
         display: grid;
         grid-template-columns: 1fr;
         
@@ -29,8 +30,10 @@
     grid-row: 1;
     position: relative; 
 
- 
-    
+    @media (max-width: 850px){
+        grid-column: 1;
+        grid-row: 1;
+    }
 }
 
 .large img{
@@ -38,12 +41,7 @@
     display: block;
     height: auto;
 
-    @media (max-width: 600px){
-        min-width: 100%;
-        height: auto;
-        border: 5px solid red;
-        
-    }
+
 }
 
 
@@ -52,6 +50,10 @@
     grid-row: 2;
     position: relative;
 
+    @media (max-width: 850px){
+        grid-column: 1;
+        grid-row: 2;
+    }
   
 }
 
@@ -66,7 +68,10 @@
     grid-row: 2;
     position: relative;
 
-
+    @media (max-width: 850px){
+        grid-column: 1;
+        grid-row: 3;
+    }
 }
 
 .medium1 img{
@@ -80,6 +85,10 @@
     grid-row: 3;
     position: relative;
 
+    @media (max-width: 850px){
+        grid-column: 1;
+        grid-row: 4;
+    }
     
 }
 
@@ -94,7 +103,10 @@
     grid-row: 3;
     position: relative;
 
-   
+    @media (max-width: 850px){
+        grid-column: 1;
+        grid-row: 5;
+    }
 }
 
 .small2 img{
@@ -111,5 +123,9 @@
     text-align: center; 
     font-size: $gallery-text-size;
     font-weight: bold;
+
+    @media (max-width: 400px){
+        font-size: $gallery-text-size-sm;
+    }
 }
 

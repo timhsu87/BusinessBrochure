@@ -10,11 +10,19 @@
     font-size: $review-title-size;
     margin-top: 50px;
     display: inline-block;
+
+    @media (max-width: 600px){
+        font-size: $review-title-size-sm;
+    }
 }
 
 //Review page font size
 .review p{
     font-size: $review-font-size;
+
+    @media (max-width: 700px){
+        margin-bottom: 20px;
+    }
 }
 
 //Use this for red text review
@@ -33,10 +41,33 @@
     font-size: $star-font-size;
     color: $yellow-star;
     margin-left: 20px;
+
+    @media (max-width: 600px){
+        font-size: $star-font-size;
+        margin-left: 37%;
+        line-height: 70px;
+    }
+
+    @media (max-width: 400px){
+        font-size: $star-font-size;
+        
+    }
 }
 
 //H5 styles
 
 #authors{
     margin-left: 480px;
+
+    @media (max-width: 850px){
+        margin-left: 350px;
+    }
+
+    @media (max-width: 700px){
+        margin-left: 200px;
+    }
+
+    @media (max-width: 500px){
+        margin-left: 100px;
+    }
 }
