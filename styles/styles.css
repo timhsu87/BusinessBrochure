@@ -116,9 +116,6 @@ a {
 .section-title {
   text-align: center;
   font-size: 36px; }
-  @media (max-width: 600px) {
-    .section-title {
-      font-size: 40px; } }
 
 .gallery-grid {
   display: grid;
@@ -287,15 +284,26 @@ a {
     #authors {
       margin-left: 100px; } }
 
+@media (max-width: 1100px) {
+  form {
+    display: block;
+    text-align: center; } }
+
 .register-map {
   display: flex;
   justify-content: space-around; }
+  @media (max-width: 1100px) {
+    .register-map {
+      display: inline-block; } }
 
 .form-field {
   display: flex;
   justify-content: space-between;
-  width: 500px;
   align-items: center; }
+  @media (max-width: 1100px) {
+    .form-field {
+      display: block;
+      text-align: center; } }
 
 #form-submit {
   padding: 100px 0px; }
@@ -338,5 +346,8 @@ input, textarea {
 
 .map img {
   border-radius: 5%; }
+  @media (max-width: 1100px) {
+    .map img {
+      margin-top: 90px; } }
 
 /*# sourceMappingURL=styles.css.map */
