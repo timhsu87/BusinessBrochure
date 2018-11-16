@@ -40,6 +40,54 @@ nav {
   font-size: 16px;
   margin-right: 440px; }
 
+.overlay {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: black;
+  background-color: rgba(0, 0, 0, 0.9);
+  overflow-x: hidden;
+  transition: 0.5s; }
+
+.overlay-content {
+  position: relative;
+  top: 25%;
+  width: 100%;
+  text-align: center;
+  margin-top: 30px; }
+
+.overlay a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 36px;
+  color: #818181;
+  display: block;
+  transition: 0.3s; }
+  @media screen and (max-height: 450px) {
+    .overlay a {
+      font-size: 20px; } }
+
+.overlay a:hover, .overlay a:focus {
+  color: #f1f1f1; }
+
+.overlay .closebtn {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 36px; }
+  @media screen and (max-height: 450px) {
+    .overlay .closebtn {
+      font-size: 40px;
+      top: 15px;
+      right: 35px; } }
+
+@media (max-width: 1100px) {
+  #desktop-nav {
+    display: none; } }
+
 body {
   background-color: black;
   font-family: "Montserrat", sans-serif;
@@ -112,6 +160,15 @@ footer {
 a {
   text-decoration: none;
   color: white; }
+
+span {
+  font-size: 25px;
+  cursor: pointer;
+  margin-left: 90%;
+  display: none; }
+  @media (max-width: 1100px) {
+    span {
+      display: inline-block; } }
 
 .section-title {
   text-align: center;
@@ -270,7 +327,8 @@ a {
       line-height: 70px; } }
   @media (max-width: 400px) {
     .star {
-      font-size: 150%; } }
+      font-size: 150%;
+      margin-left: 0; } }
 
 #authors {
   margin-left: 480px; }
@@ -284,10 +342,12 @@ a {
     #authors {
       margin-left: 100px; } }
 
-@media (max-width: 1100px) {
-  form {
-    display: block;
-    text-align: center; } }
+form {
+  box-sizing: border-box; }
+  @media (max-width: 1100px) {
+    form {
+      display: block;
+      text-align: center; } }
 
 .register-map {
   display: flex;
@@ -312,9 +372,9 @@ label, input {
   margin: 10px 0px; }
 
 input {
-  vertical-align: left; }
+  vertical-align: 2px; }
 
-input, textarea {
+input, textarea, select {
   background-color: #white;
   -moz-border-radius: 21px;
   -webkit-border-radius: 21px;
@@ -328,6 +388,13 @@ input, textarea {
   padding: 7px 25px;
   text-decoration: none;
   text-shadow: 0px 1px 0px #2f6627; }
+
+textarea {
+  width: 100%;
+  height: auto; }
+  @media (max-width: 600px) {
+    textarea {
+      width: 80%; } }
 
 .submit {
   background-color: #3cb878;
@@ -345,7 +412,10 @@ input, textarea {
   text-shadow: 0px 1px 0px #2f6627; }
 
 .map img {
-  border-radius: 5%; }
+  border-radius: 5%;
+  width: 100%;
+  height: auto;
+  display: block; }
   @media (max-width: 1100px) {
     .map img {
       margin-top: 90px; } }
