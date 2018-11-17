@@ -322,12 +322,12 @@ span {
   margin-left: 20px; }
   @media (max-width: 600px) {
     .star {
-      font-size: 150%;
+      font-size: 110%;
       margin-left: 37%;
       line-height: 70px; } }
   @media (max-width: 400px) {
     .star {
-      font-size: 150%;
+      font-size: 90%;
       margin-left: 0; } }
 
 #authors {

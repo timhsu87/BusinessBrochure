@@ -43,13 +43,13 @@
     margin-left: 20px;
 
     @media (max-width: 600px){
-        font-size: $star-font-size;
+        font-size: $star-font-size-sm;
         margin-left: 37%;
         line-height: 70px;
     }
 
     @media (max-width: 400px){
-        font-size: $star-font-size;
+        font-size: $star-font-size-xsm;
         margin-left: 0;
     }
 }
