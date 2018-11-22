@@ -1,0 +1,11 @@
+User-agent: *
+Disallow: /CineCafe/signup.html
+Disallow: /images/
+Disallow: /videos/
+Disallow: /scss/
+
+
+#Disallow signup page because we don't need bots to see the sign up forms
+#Disallow images and video folder since those folders are not necessary for most viewers of website
+#Disallow SASS folder
+
